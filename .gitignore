@@ -1,2 +1,21 @@
-.venv
+# -------- RAW DATA --------
 data/raw/
+data/raw/**
+
+# -------- INTERMEDIATE FILES --------
+data/*.csv
+
+# -------- EXCEPT FINAL CSVs --------
+!data/ai_risk_ranking.csv
+!data/cvss_baseline_ranking.csv
+!data/dashboard_ready.csv
+
+# -------- PROCESSED (FINAL) --------
+!data/processed/
+!data/processed/**
+
+# -------- MISC --------
+*.log
+__pycache__/
+.ipynb_checkpoints/
+.venv
